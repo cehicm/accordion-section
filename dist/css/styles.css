@@ -1,3 +1,6 @@
+.accordion-list-wrapper {
+  width: 50%;
+}
 .accordion-list-container {
   list-style: none;
   padding-left: 0;
@@ -24,18 +27,32 @@ body {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
-  overflow: hidden;
 }
 .accordion-wrapper {
-  display: flex;
-  gap: 20px;
   background-color: #ffffff;
+  border-radius: 25px;
+}
+@media (min-width: 1024px) {
+  .accordion-wrapper {
+    display: flex;
+    gap: 20px;
+  }
 }
 
-.image-wrapper .border-img__main img {
-  transform: translate(-94px, 80px);
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
 }
-.image-wrapper .border-img__shadow img {
+.image-wrapper .border-img__main {
+  transform: translate(-84px, 67px);
+}
+.image-wrapper .border-img__shadow {
   position: absolute;
-  transform: translate(-1039px, -289px);
+  transform: translate(-573px, -650px);
+}
+
+.border-img__box {
+  position: absolute;
+  transform: translate(-93px, 202px);
+  z-index: 2;
 }

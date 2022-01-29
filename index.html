@@ -4,14 +4,19 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Accordion</title>
 	</head>
 
 	<body>
 		<section class="accordion-section">
 			<div class="accordion-wrapper">
+				<img
+					class="border-img__box"
+					alt="Illustration box desktop"
+					src="/src/images/illustration-box-desktop.svg"
+				/>
 				<div class="image-wrapper">
-					<picture class="border-img border-img__main">
+					<picture>
 						<source
 							srcset="/src/images/illustration-woman-online-desktop.svg"
 							media="(min-width:1024px)"
@@ -21,11 +26,12 @@
 							media="(min-width: 320px)"
 						/>
 						<img
+							class="border-img border-img__main"
 							alt="Illustration woman online"
 							src="/src/images/illustration-woman-online-mobile.svg"
 						/>
 					</picture>
-					<picture class="border-img border-img__shadow">
+					<picture>
 						<source
 							srcset="/src/images/bg-pattern-desktop.svg"
 							media="(min-width: 1024px)"
@@ -35,6 +41,7 @@
 							media="(min-width:320px)"
 						/>
 						<img
+							class="border-img border-img__shadow"
 							alt="Background shadow pattern"
 							src="/src/images/bg-pattern-mobile.svg"
 						/>

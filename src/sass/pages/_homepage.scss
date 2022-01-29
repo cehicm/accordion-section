@@ -18,29 +18,36 @@ body {
 		top: 50%;
 		right: 50%;
 		transform: translate(50%, -50%);
-		overflow: hidden;
 	}
 
 	&-wrapper {
-		display: flex;
-		gap: 20px;
+		@include sc-breakpoint(1024) {
+			display: flex;
+			gap: 20px;
+		}
+
 		background-color: colors.$white;
+		border-radius: 25px;
 	}
 }
 
 .image-wrapper {
+	position: relative;
+	overflow: hidden;
 	.border-img {
 		&__main {
-			img {
-				transform: translate(-94px, 80px);
-			}
+			transform: translate(-84px, 67px);
 		}
 
 		&__shadow {
-			img {
-				position: absolute;
-				transform: translate(-1039px, -289px);
-			}
+			position: absolute;
+			transform: translate(-573px, -650px);
 		}
 	}
+}
+
+.border-img__box {
+	position: absolute;
+	transform: translate(-93px, 202px);
+	z-index: 2;
 }
