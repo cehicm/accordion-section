@@ -1,0 +1,10 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+body {
+	background: linear-gradient(
+		180deg,
+		colors.$gradient-light-purple 0%,
+		colors.$gradient-dark-purple 100%
+	);
+}
