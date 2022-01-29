@@ -1,0 +1,11 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+body {
+	font-family: "Kumbh Sans";
+}
+
+.text-dark--bold {
+	font-weight: 700;
+	color: colors.$question-title-dark-gray;
+}

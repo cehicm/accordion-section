@@ -1,0 +1,12 @@
+body {
+  font-family: "Kumbh Sans";
+}
+
+.text-dark--bold {
+  font-weight: 700;
+  color: #4b4c5f;
+}
+
+body {
+  background: linear-gradient(180deg, #b068e9 0%, #7d65e8 100%);
+}
