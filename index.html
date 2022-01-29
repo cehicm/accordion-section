@@ -1,13 +1,85 @@
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="/dist/css/styles.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-<script src="/dist/scripts/main.js"></script>
-</body>
+	<head>
+		<link rel="stylesheet" href="/dist/css/styles.css" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<section class="accordion-section">
+			<div class="accordion-wrapper">
+				<div class="image-wrapper">
+					<picture>
+						<source
+							srcset="/src/images/illustration-woman-online-desktop.svg"
+							media="(min-width:1024px)"
+						/>
+						<source
+							srcset="/src/images/illustration-woman-online-mobile.svg"
+							media="(min-width: 320px)"
+						/>
+						<img
+							alt="Illustration woman online"
+							src="/src/images/illustration-woman-online-mobile.svg"
+						/>
+					</picture>
+					<picture class="border-img border-img__shadow">
+						<source
+							srcset="/src/images/bg-pattern-desktop.svg"
+							media="(min-width: 1024px)"
+						/>
+						<source
+							srcset="/src/images/bg-pattern-mobile.svg"
+							media="(min-width:320px)"
+						/>
+						<img
+							alt="Background shadow pattern"
+							src="/src/images/bg-pattern-mobile.svg"
+						/>
+					</picture>
+				</div>
+
+				<div class="accordion-wrapper">
+					<h1>FAQ</h1>
+					<ul class="accordion-list-container">
+						<li class="list-item">
+							<h2 class="question-title">
+								How many team members can I invite?
+							</h2>
+							<div class="question-answer">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+								odit perspiciatis tenetur debitis sint labore!
+							</div>
+						</li>
+						<li class="list-item">
+							<h2 class="question-title">
+								What is the maximum file upload size?
+							</h2>
+							<div class="question-answer">
+								No more than 2GB. All files in your account must fit your
+								allotted storage space.
+							</div>
+						</li>
+						<li class="list-item">
+							<h2 class="question-title">How do I reset my password?</h2>
+							<div class="question-answer">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+								odit perspiciatis tenetur debitis sint labore!
+							</div>
+						</li>
+						<li class="list-item">
+							<h2 class="question-title">Do you procide additional support?</h2>
+							<div class="question-answer">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+								odit perspiciatis tenetur debitis sint labore!
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<script src="/dist/scripts/main.js"></script>
+	</body>
 </html>
