@@ -1,13 +1,70 @@
+/* kumbh-sans-regular - latin */
+@font-face {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/dist/fonts/kumbh-sans-v10-latin/kumbh-sans-v10-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/dist/fonts/kumbh-sans-v10-latin/kumbh-sans-v10-latin-regular.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/kumbh-sans-v10-latin/kumbh-sans-v10-latin-regular.woff2") format("woff2"), url("/dist/fonts/kumbh-sans-v10-latin/kumbh-sans-v10-latin-regular.woff") format("woff"), url("/dist/fonts/kumbh-sans-v10-latin/kumbh-sans-v10-latin-regular.ttf") format("truetype"), url("/dist/fonts/kumbh-sans-v10-latin/kumbh-sans-v10-latin-regular.svg#KumbhSans") format("svg");
+  /* Legacy iOS */
+}
+/* kumbh-sans-700 - latin */
+@font-face {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/dist/fonts/kumbh-sans-v10-latin/kumbh-sans-v10-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/dist/fonts/kumbh-sans-v10-latin/kumbh-sans-v10-latin-700.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/kumbh-sans-v10-latin/kumbh-sans-v10-latin-700.woff2") format("woff2"), url("/dist/fonts/kumbh-sans-v10-latin/kumbh-sans-v10-latin-700.woff") format("woff"), url("/dist/fonts/kumbh-sans-v10-latin/kumbh-sans-v10-latin-700.ttf") format("truetype"), url("/dist/fonts/kumbh-sans-v10-latin/kumbh-sans-v10-latin-700.svg#KumbhSans") format("svg");
+  /* Legacy iOS */
+}
 .accordion-list-wrapper {
-  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 25px;
 }
 .accordion-list-container {
   list-style: none;
   padding-left: 0;
 }
+.accordion-list-container .list-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e8ea;
+}
+
+.rotate-180 {
+  transform: rotateZ(180deg);
+}
+
+.list-item .question-answer {
+  display: none;
+}
+.list-item.open .question-answer {
+  display: block;
+}
+
+.list-item .question-title::after {
+  content: url("/src/images/icon-arrow-down.svg");
+  justify-self: end;
+}
 
 body {
   font-family: "Kumbh Sans";
+}
+
+.accordion-list-wrapper .main-title {
+  font-size: 32px;
+}
+.accordion-list-wrapper .list-item .question-title {
+  font-size: 14px;
+  font-weight: 400;
+}
+.accordion-list-wrapper .list-item .question-answer {
+  font-size: 12px;
 }
 
 .text-dark--bold {
@@ -22,15 +79,13 @@ body {
 .accordion-section {
   max-width: 920px;
   width: 100%;
-  height: 509px;
   position: absolute;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
 }
 .accordion-wrapper {
-  background-color: #ffffff;
-  border-radius: 25px;
+  position: relative;
 }
 @media (min-width: 1024px) {
   .accordion-wrapper {
@@ -41,14 +96,16 @@ body {
 
 .image-wrapper {
   position: relative;
-  overflow: hidden;
 }
 .image-wrapper .border-img__main {
-  transform: translate(-84px, 67px);
+  transform: translateY(60px);
 }
 .image-wrapper .border-img__shadow {
   position: absolute;
   transform: translate(-573px, -650px);
+}
+.image-wrapper .border-img__box {
+  display: none;
 }
 
 .border-img__box {

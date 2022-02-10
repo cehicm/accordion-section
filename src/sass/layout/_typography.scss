@@ -5,6 +5,23 @@ body {
 	font-family: "Kumbh Sans";
 }
 
+.accordion-list-wrapper {
+	.main-title {
+		font-size: 32px;
+	}
+
+	.list-item {
+		.question-title {
+			font-size: 14px;
+			font-weight: 400;
+		}
+
+		.question-answer {
+			font-size: 12px;
+		}
+	}
+}
+
 .text-dark--bold {
 	font-weight: 700;
 	color: colors.$question-title-dark-gray;
